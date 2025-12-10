@@ -1,7 +1,9 @@
 # 🤖 TRYHACKME AUTO EXTEND
 
-[![GitHub license](https://img.shields.io/github/license/multinike100/tryhackme-auto-extend)](LICENSE)
+
+[![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/multinike/tryhackme-auto-extend.svg?style=social)](https://github.com/YourUsername/tryhackme-auto-extend)
+
 
 This repository provides two essential tools for an optimal TryHackMe (THM) machine experience:
 
@@ -9,7 +11,9 @@ This repository provides two essential tools for an optimal TryHackMe (THM) mach
 
 2.  **Python Utility**: A simple script to quickly and correctly update your `/etc/hosts` file with the target machine's IP address.
 
+
 ---
+
 
 ## 🎯 Features
 
@@ -25,7 +29,9 @@ This repository provides two essential tools for an optimal TryHackMe (THM) mach
 * **One-Command Setup**: Adds the machine IP and a user-defined alias (e.g., `target.thm`) to your hosts file.
 * **Cleanup**: Provides an option to remove the entry once you are finished with the room.
 
+
 ---
+
 
 ## 🚀 Installation & Setup
 
@@ -56,6 +62,7 @@ The extension will now be active until you close or restart Firefox.
     ```
 
 ---
+
 
 ## 💡 Usage
 
@@ -94,11 +101,29 @@ This mode starts a local web server that communicates with the browser extension
    
 > **Note:** The server will likely prompt you for your `sudo` password the **first time** the extension pushes a new IP update, as modifying `/etc/hosts` requires root permissions. <br> <br> If you want to avoid entering your `sudo` password on every update, run the python script as root by switching to root user using `sudo su`.
 
+
 ---
+
+
+## How to Contribute
+
+We encourage you to contribute to this project!
+
+1.  **Fork** the repository.
+2.  Create a new branch: `git checkout -b feature/your-new-feature`
+3.  Make your changes and commit them: `git commit -m 'feat: Add new feature X'`
+4.  Push to the branch: `git push origin feature/your-new-feature`
+5.  Open a **Pull Request** and describe your changes clearly.
+
+For major changes, please open an issue first to discuss what you would like to change.
+
+
+---
+
 
 ## 📄 License
 
-[![GitHub license](https://img.shields.io/github/license/multinike100/tryhackme-auto-extend)](LICENSE)
+[![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 This project is licensed under the **MIT License**. 
 
