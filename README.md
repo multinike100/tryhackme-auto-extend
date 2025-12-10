@@ -94,6 +94,14 @@ This mode starts a local web server that communicates with the browser extension
    
 > **Note:** The server will likely prompt you for your `sudo` password the **first time** the extension pushes a new IP update, as modifying `/etc/hosts` requires root permissions. <br> <br> If you want to avoid entering your `sudo` password on every update, run the python script as root by switching to root user using `sudo su`.
 
+---
+
 ## 📄 License
 
-Distributed under the **MIT License**. See `LICENSE` for more information.
+[![GitHub license](https://img.shields.io/github/license/multinike100/tryhackme-auto-extend)](LICENSE)
+
+This project is licensed under the **MIT License**. 
+
+For the full terms and conditions, please see the [LICENSE](LICENSE) file in the root of the repository.
+
+---
