@@ -50,8 +50,9 @@ The extension will now be active until you close or restart Firefox.
 1.  Ensure you have Python 3 installed.
 2.  Download the `hosts_updater.py` script.
 3.  (Optional but Recommended) Make the script executable:
+
     ```bash
-    chmod +x hosts_updater.py
+    chmod +x thm_hosts_updater.py
     ```
 
 ---
@@ -74,24 +75,25 @@ This mode starts a local web server that communicates with the browser extension
 1.  **Start the Server:** Open a terminal and run the script without any arguments:
 
     ```bash
-    # Syntax: python hosts_updater.py
-    python hosts_updater.py
+    python thm_hosts_updater.py
     ```
 
 2.  **Verify Output:** The terminal should show the server starting and listening:
 
-    ```
-    THM Hosts Updater listening on [http://127.0.0.1:8123](http://127.0.0.1:8123)
-    Ready to auto-update machine.thm → use with the content.js script!
-     Serving Flask app 'thm_hosts_updater'
-     Debug mode: off
-    WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-     Running on [http://127.0.0.1:8123](http://127.0.0.1:8123)
-    Press CTRL+C to quit
-    ```
+    > `THM Hosts Updater listening on http://127.0.0.1:8123`<br>
+    > `Ready to auto-update machine.thm → use with the content.js script!`<br>
+    > `    Serving Flask app 'thm_hosts_updater'`<br>
+    > `    Debug mode: off`<br>
+    > `WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.`<br>
+    > `    Running on http://127.0.0.1:8123`<br>
+    > `Press CTRL+C to quit`
 
 3.  **Automatic Updates:** Once running, simply start a machine on TryHackMe. The browser extension will communicate with the server to automatically insert the machine's IP address under the alias `machine.thm` (or your configured alias).
 
 4.  **On Update:** Your `/etc/hosts/` file should now contain an entry with the room ip and domain machine.thm with the room name. `10.48.168.71    machine.thm  # THM room: Scheme Catcher`
+   
 > **Note:** The server will likely prompt you for your `sudo` password the **first time** the extension pushes a new IP update, as modifying `/etc/hosts` requires root permissions. <br> <br> If you want to avoid entering your `sudo` password on every update, run the python script as root by switching to root user using `sudo su`.
 
+## 📄 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
