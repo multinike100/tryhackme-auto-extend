@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "THM Machine Resolver + Auto-Extend",
+  "version": "2.4",
+  "description": "Automatically updates machine.thm in /etc/hosts + extends your room by +1h when <5 min left. Zero clicks needed.",
+  "icons": {
+    "16": "icons/thm-48.png",
+    "32": "icons/thm-48.png",
+    "48": "icons/thm-48.png",
+    "128": "icons/thm-48.png"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://tryhackme.com/room/*",
+    "http://localhost:8123/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "thm-auto-resolver@nikshit"
+    }
+  }
+}
