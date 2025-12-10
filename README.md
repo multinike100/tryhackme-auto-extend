@@ -80,7 +80,7 @@ This mode starts a local web server that communicates with the browser extension
 
 2.  **Verify Output:** The terminal should show the server starting and listening:
 
-    `
+    ```
     THM Hosts Updater listening on [http://127.0.0.1:8123](http://127.0.0.1:8123)
     Ready to auto-update machine.thm → use with the content.js script!
      Serving Flask app 'thm_hosts_updater'
@@ -88,7 +88,7 @@ This mode starts a local web server that communicates with the browser extension
     WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
      Running on [http://127.0.0.1:8123](http://127.0.0.1:8123)
     Press CTRL+C to quit
-    `
+    ```
 
 3.  **Automatic Updates:** Once running, simply start a machine on TryHackMe. The browser extension will communicate with the server to automatically insert the machine's IP address under the alias `machine.thm` (or your configured alias).
 
