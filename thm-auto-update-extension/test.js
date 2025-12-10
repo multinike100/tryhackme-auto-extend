@@ -1,1 +1,0 @@
-"1h 15min 3s".matchAll(/(?:(\d*)(?:h)\s*)?(?:(\d*)(?:min)\s*)?(?:(\d*)(?:s))/g).forEach(d=>console.log(d))
